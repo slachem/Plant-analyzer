@@ -8,11 +8,11 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
-app.use(express.static('public'));
+app.use(express.static('Public'));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+    res.sendFile(path.join(__dirname, 'Public', 'index.html'));
+
 
 app.post('/api/analyze', async (req, res) => {
     try {
