@@ -12,7 +12,7 @@ app.use(express.static('Public'));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'Public', 'index.html'));
-
+});
 
 app.post('/api/analyze', async (req, res) => {
     try {
