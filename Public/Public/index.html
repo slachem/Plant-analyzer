@@ -24,7 +24,7 @@
     <script type="text/babel">
         const { useState, useEffect } = React;
 
-```
+        ```
     function PlantAnalyzer() {
         const [selectedImage, setSelectedImage] = useState(null);
         const [imagePreview, setImagePreview] = useState(null);
@@ -342,43 +342,7 @@
                                         <ul className="space-y-2">
                                             {analysis.recommendations.map((rec, idx) => (
                                                 <li key={idx} className="flex items-start">
-                                                    <span className="text-blue-600 mr-2">•</span>
-                                                    <span className="text-gray-700">{rec}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                            )}
-
-                            {analysis.additionalNotes && (
-                                <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
-                                    <h3 className="text-lg font-bold text-gray-800 mb-2">📝 Additional Notes</h3>
-                                    <p className="text-gray-700">{analysis.additionalNotes}</p>
-                                </div>
-                            )}
-                        </div>
-                    )}
-                </div>
-
-                <div className="mt-8 text-center text-sm text-gray-600">
-                    <p>Powered by Claude AI</p>
-                </div>
-            </div>
-        );
-    }
-    ReactDOM.render(<PlantAnalyzer />, document.getElementById('root'));
-</script>
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(reg => console.log('SW registered'))
-                .catch(err => console.log('SW failed', err));
-        });
-    }
-</script>
-```
+                                                    <
 
 </body>
 </html>
